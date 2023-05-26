@@ -1,18 +1,15 @@
 import path from 'path';
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
-import tailwindcss from 'tailwindcss';
 import dts from 'vite-plugin-dts';
-// import postcss from './postcss.config.js';
+import postcssConfig from './postcss.config.js';
 
 export default defineConfig({
   plugins: [vue(), dts({
     insertTypesEntry: true,
   })], 
   css:{
-    postcss: {
-      plugins: [tailwindcss],
-    }
+    postcss: postcssConfig
   },
   build: {
     lib: {

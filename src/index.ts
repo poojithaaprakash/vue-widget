@@ -2,14 +2,14 @@ import { App } from 'vue'
 import { Plugin } from 'vue';
 import './tailwind.css'
 
-import ReputeXWidget from './components/ReputeXWidget/ReputeXWidget.vue';
+import SkeletonCard from './components/SkeletonCard/SkeletonCard.vue';
 
-const RepxWidgetLibrary = {
+const SkeletonCardLibrary = {
   install(app: App) {
-    app.component(ReputeXWidget.name, ReputeXWidget)
+    app.component(SkeletonCard.name, SkeletonCard)
   }
 };
 
-export default RepxWidgetLibrary as Plugin;
-export {default as ReputeXWidget} from './components/ReputeXWidget/ReputeXWidget.vue'
+export default SkeletonCardLibrary as Plugin;
+export {default as SkeletonCard} from './components/SkeletonCard/SkeletonCard.vue';
 

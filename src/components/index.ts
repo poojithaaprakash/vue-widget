@@ -1,5 +1,5 @@
-import ReputexWidget from './ReputeXWidget/ReputeXWidget.vue'
+import SkeletonCard from './SkeletonCard/SkeletonCard.vue';
 import '../tailwind.css';
 
-export default {ReputexWidget}
+export default {SkeletonCard}
 
