@@ -1,17 +1,18 @@
 <script lang="ts">
+import { defineComponent } from "vue";
 import CircleRight from "../icons/CircleRight.vue";
 import RectangleTop from "../icons/RectangleTop.vue";
 import RectangleLeft from "../icons/RectangleLeft.vue";
 import RectangleMiddle from "../icons/RectangleMiddle.vue";
 import RectangleRight from "../icons/RectangleRight.vue";
 import LineSvg from "../icons/LineSvg.vue";
-import { defineComponent } from "vue";
 
 export default defineComponent ({
-  name: "skeletonCard",
-  props: {
-    mode: { type: Boolean, required: true, default: true },
-  },
+    name: "SkeletonCard",
+    props: {
+        mode: { type: Boolean, required: true, default: true },
+    },
+    components: { CircleRight, RectangleTop, RectangleLeft, RectangleMiddle, RectangleRight, LineSvg }
 });
 </script>
 
@@ -31,14 +32,14 @@ export default defineComponent ({
           class="flex w-[180px] h-[55px] m-5 ml-2 rounded-[106px] bg-[#C5C5C5]"
         >
           <div class="circleRight">
-            <CircleRight />
+            <CircleRight/>
           </div>
           <div class="rectangleTop">
             <RectangleTop class="w-[80px]" />
           </div>
         </div>
 
-        <LineSvg class="w-[170px] ml-4" />
+        <LineSvg class="w-[170px] ml-4"/>
 
         <!-- address display -->
         <div>
@@ -47,13 +48,13 @@ export default defineComponent ({
 
         <div class="flex ml-2">
           <div class="rectangleLeft">
-            <RectangleLeft />
+            <RectangleLeft/>
           </div>
           <div class="rectangleMiddle">
-            <RectangleMiddle />
+            <RectangleMiddle/>
           </div>
           <div class="rectangleRight">
-            <RectangleRight />
+            <RectangleRight/>
           </div>
         </div>
       </div>
